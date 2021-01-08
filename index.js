@@ -3,7 +3,7 @@ const app = express();
 const dataJson = require("./json/mock.json")
 
 app.get("/mock", function (req, res) {
-  res.status(404).send(dataJson);
+  res.status(404).json(dataJson);
 });
 
 app.get("/", function (req, res) {
